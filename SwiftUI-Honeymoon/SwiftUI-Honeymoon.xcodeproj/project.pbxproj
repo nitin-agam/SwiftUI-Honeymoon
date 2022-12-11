@@ -21,6 +21,9 @@
 		C757DAF32945F80F00DEA463 /* GuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C757DAF22945F80F00DEA463 /* GuideView.swift */; };
 		C757DAF52945F82E00DEA463 /* GuideComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C757DAF42945F82E00DEA463 /* GuideComponentView.swift */; };
 		C757DAF72945F86600DEA463 /* GuideInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C757DAF62945F86600DEA463 /* GuideInfo.swift */; };
+		C757DAFB2946077E00DEA463 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C757DAFA2946077E00DEA463 /* InfoView.swift */; };
+		C757DAFD2946098500DEA463 /* SectionTitleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C757DAFC2946098500DEA463 /* SectionTitleModifier.swift */; };
+		C757DAFF294616AA00DEA463 /* ContinueButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C757DAFE294616AA00DEA463 /* ContinueButtonModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,9 @@
 		C757DAF22945F80F00DEA463 /* GuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideView.swift; sourceTree = "<group>"; };
 		C757DAF42945F82E00DEA463 /* GuideComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideComponentView.swift; sourceTree = "<group>"; };
 		C757DAF62945F86600DEA463 /* GuideInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideInfo.swift; sourceTree = "<group>"; };
+		C757DAFA2946077E00DEA463 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		C757DAFC2946098500DEA463 /* SectionTitleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTitleModifier.swift; sourceTree = "<group>"; };
+		C757DAFE294616AA00DEA463 /* ContinueButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinueButtonModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +80,6 @@
 				C757DAE92945D1EC00DEA463 /* Home */,
 				C757DAE22945CEE900DEA463 /* Sound */,
 				C757DAD42945CB1E00DEA463 /* SwiftUI_HoneymoonApp.swift */,
-				C757DAD62945CB1E00DEA463 /* DestinationHomeView.swift */,
 				C757DAD82945CB2000DEA463 /* Assets.xcassets */,
 				C757DADA2945CB2000DEA463 /* Preview Content */,
 				C757DAE72945D0B600DEA463 /* Launch.storyboard */,
@@ -102,15 +107,35 @@
 		C757DAE92945D1EC00DEA463 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				C757DAD62945CB1E00DEA463 /* DestinationHomeView.swift */,
 				C757DAEA2945D20700DEA463 /* HoneymoonData.swift */,
 				C757DAEC2945D32D00DEA463 /* DestinationCardView.swift */,
 				C757DAEE2945EEDC00DEA463 /* HomeHeaderView.swift */,
 				C757DAF02945F2E500DEA463 /* HomeFooterView.swift */,
+				C757DAFC2946098500DEA463 /* SectionTitleModifier.swift */,
+				C757DAFE294616AA00DEA463 /* ContinueButtonModifier.swift */,
+				C757DAF92946076C00DEA463 /* Info */,
+				C757DAF82946076100DEA463 /* Guide */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C757DAF82946076100DEA463 /* Guide */ = {
+			isa = PBXGroup;
+			children = (
 				C757DAF22945F80F00DEA463 /* GuideView.swift */,
 				C757DAF42945F82E00DEA463 /* GuideComponentView.swift */,
 				C757DAF62945F86600DEA463 /* GuideInfo.swift */,
 			);
-			path = Home;
+			path = Guide;
+			sourceTree = "<group>";
+		};
+		C757DAF92946076C00DEA463 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				C757DAFA2946077E00DEA463 /* InfoView.swift */,
+			);
+			path = Info;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,10 +216,13 @@
 				C757DAEF2945EEDC00DEA463 /* HomeHeaderView.swift in Sources */,
 				C757DAD52945CB1E00DEA463 /* SwiftUI_HoneymoonApp.swift in Sources */,
 				C757DAF32945F80F00DEA463 /* GuideView.swift in Sources */,
+				C757DAFD2946098500DEA463 /* SectionTitleModifier.swift in Sources */,
 				C757DAEB2945D20700DEA463 /* HoneymoonData.swift in Sources */,
 				C757DAF72945F86600DEA463 /* GuideInfo.swift in Sources */,
 				C757DAED2945D32D00DEA463 /* DestinationCardView.swift in Sources */,
+				C757DAFB2946077E00DEA463 /* InfoView.swift in Sources */,
 				C757DAF52945F82E00DEA463 /* GuideComponentView.swift in Sources */,
+				C757DAFF294616AA00DEA463 /* ContinueButtonModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct GuideView: View {
+    
+    @Environment(\.dismiss) var dismiss
+    
     var body: some View {
-        
         ScrollView(.vertical, showsIndicators: false) {
             VStack(alignment: .center, spacing: 20) {
                 Capsule()
@@ -22,10 +24,10 @@ struct GuideView: View {
                     .scaledToFit()
                     .frame(height: 28)
                 
+                Spacer(minLength: 10)
+                
                 Text("Get Started!")
-                    .font(.title)
-                    .fontWeight(.heavy)
-                    .foregroundColor(.pink)
+                    .modifier(SectionTitleModifier())
                 
                 Text("Discover and pick the perfect destination for your romantic honeymoon.")
                     .font(.body)
@@ -43,17 +45,11 @@ struct GuideView: View {
                 Spacer(minLength: 10)
                 
                 Button {
-                    
+                    dismiss()
                 } label: {
                     Text("continue".uppercased())
-                        .font(.headline)
-                        .padding()
-                        .frame(minWidth: 0, maxWidth: .infinity)
-                        .background(Capsule().fill(.pink))
-                        .foregroundColor(.white)
-                    
+                        .modifier(ContinueButtonModifier())
                 }
-
             }
             .frame(minWidth: 0, maxWidth: .infinity)
             .padding(.top, 15)
@@ -66,6 +62,6 @@ struct GuideView: View {
 struct GuideView_Previews: PreviewProvider {
     static var previews: some View {
         GuideView()
-           // .previewLayout(.fixed(width: 375, height: 180))
+        // .previewLayout(.fixed(width: 375, height: 180))
     }
 }

@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct HomeFooterView: View {
+    
+    @Binding var showBookingAlert: Bool
+    
     var body: some View {
         HStack {
             
@@ -24,7 +27,7 @@ struct HomeFooterView: View {
 
             
             Button {
-                
+                self.showBookingAlert.toggle()
             } label: {
                 Text("Book Destination".uppercased())
                     .font(.footnote)
@@ -52,8 +55,11 @@ struct HomeFooterView: View {
 }
 
 struct HomeFooterView_Previews: PreviewProvider {
+    
+    @State static var showAlert: Bool = false
+    
     static var previews: some View {
-        HomeFooterView()
+        HomeFooterView(showBookingAlert: $showAlert)
             .previewLayout(.fixed(width: 375, height: 80))
     }
 }

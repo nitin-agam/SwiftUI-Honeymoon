@@ -9,11 +9,14 @@ import SwiftUI
 
 struct DestinationHomeView: View {
     
+    @State private var showAlert: Bool = false
+    @State private var showGuide: Bool = false
+    @State private var showInfo: Bool = false
+    
     var body: some View {
         
         VStack {
-            
-            HomeHeaderView()
+            HomeHeaderView(showGuideView: $showGuide, showInfoView: $showInfo)
                 .frame(height: 80)
             
             Spacer()
@@ -23,7 +26,13 @@ struct DestinationHomeView: View {
             
             Spacer()
             
-            HomeFooterView()
+            HomeFooterView(showBookingAlert: $showAlert)
+        }
+        .alert(isPresented: $showAlert) {
+          Alert(
+            title: Text("SUCCESS"),
+            message: Text("Wishing a lovely and most precious of the times together for the amazing couple."),
+            dismissButton: .default(Text("Happy Honeymoon!")))
         }
     }
 }
