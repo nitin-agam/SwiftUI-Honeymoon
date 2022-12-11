@@ -8,21 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		C757DAD52945CB1E00DEA463 /* SwiftUI_HoneymoonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C757DAD42945CB1E00DEA463 /* SwiftUI_HoneymoonApp.swift */; };
-		C757DAD72945CB1E00DEA463 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C757DAD62945CB1E00DEA463 /* ContentView.swift */; };
+		C757DAD72945CB1E00DEA463 /* DestinationHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C757DAD62945CB1E00DEA463 /* DestinationHomeView.swift */; };
 		C757DAD92945CB2000DEA463 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C757DAD82945CB2000DEA463 /* Assets.xcassets */; };
 		C757DADC2945CB2000DEA463 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C757DADB2945CB2000DEA463 /* Preview Assets.xcassets */; };
 		C757DAE52945CEE900DEA463 /* sound-rise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C757DAE32945CEE900DEA463 /* sound-rise.mp3 */; };
 		C757DAE62945CEE900DEA463 /* sound-click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C757DAE42945CEE900DEA463 /* sound-click.mp3 */; };
+		C757DAE82945D0B600DEA463 /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C757DAE72945D0B600DEA463 /* Launch.storyboard */; };
+		C757DAEB2945D20700DEA463 /* HoneymoonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C757DAEA2945D20700DEA463 /* HoneymoonData.swift */; };
+		C757DAED2945D32D00DEA463 /* DestinationCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C757DAEC2945D32D00DEA463 /* DestinationCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C757DAD12945CB1E00DEA463 /* SwiftUI-Honeymoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Honeymoon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C757DAD42945CB1E00DEA463 /* SwiftUI_HoneymoonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_HoneymoonApp.swift; sourceTree = "<group>"; };
-		C757DAD62945CB1E00DEA463 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C757DAD62945CB1E00DEA463 /* DestinationHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationHomeView.swift; sourceTree = "<group>"; };
 		C757DAD82945CB2000DEA463 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C757DADB2945CB2000DEA463 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C757DAE32945CEE900DEA463 /* sound-rise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-rise.mp3"; sourceTree = "<group>"; };
 		C757DAE42945CEE900DEA463 /* sound-click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-click.mp3"; sourceTree = "<group>"; };
+		C757DAE72945D0B600DEA463 /* Launch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
+		C757DAEA2945D20700DEA463 /* HoneymoonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneymoonData.swift; sourceTree = "<group>"; };
+		C757DAEC2945D32D00DEA463 /* DestinationCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +61,13 @@
 		C757DAD32945CB1E00DEA463 /* SwiftUI-Honeymoon */ = {
 			isa = PBXGroup;
 			children = (
+				C757DAE92945D1EC00DEA463 /* Home */,
 				C757DAE22945CEE900DEA463 /* Sound */,
 				C757DAD42945CB1E00DEA463 /* SwiftUI_HoneymoonApp.swift */,
-				C757DAD62945CB1E00DEA463 /* ContentView.swift */,
+				C757DAD62945CB1E00DEA463 /* DestinationHomeView.swift */,
 				C757DAD82945CB2000DEA463 /* Assets.xcassets */,
 				C757DADA2945CB2000DEA463 /* Preview Content */,
+				C757DAE72945D0B600DEA463 /* Launch.storyboard */,
 			);
 			path = "SwiftUI-Honeymoon";
 			sourceTree = "<group>";
@@ -79,6 +87,15 @@
 				C757DAE42945CEE900DEA463 /* sound-click.mp3 */,
 			);
 			path = Sound;
+			sourceTree = "<group>";
+		};
+		C757DAE92945D1EC00DEA463 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C757DAEA2945D20700DEA463 /* HoneymoonData.swift */,
+				C757DAEC2945D32D00DEA463 /* DestinationCardView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C757DAE52945CEE900DEA463 /* sound-rise.mp3 in Resources */,
+				C757DAE82945D0B600DEA463 /* Launch.storyboard in Resources */,
 				C757DAE62945CEE900DEA463 /* sound-click.mp3 in Resources */,
 				C757DADC2945CB2000DEA463 /* Preview Assets.xcassets in Resources */,
 				C757DAD92945CB2000DEA463 /* Assets.xcassets in Resources */,
@@ -153,8 +171,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C757DAD72945CB1E00DEA463 /* ContentView.swift in Sources */,
+				C757DAD72945CB1E00DEA463 /* DestinationHomeView.swift in Sources */,
 				C757DAD52945CB1E00DEA463 /* SwiftUI_HoneymoonApp.swift in Sources */,
+				C757DAEB2945D20700DEA463 /* HoneymoonData.swift in Sources */,
+				C757DAED2945D32D00DEA463 /* DestinationCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,11 +306,13 @@
 				DEVELOPMENT_TEAM = SV2VAC6NH9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Honeymoon;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = Launch.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,11 +337,13 @@
 				DEVELOPMENT_TEAM = SV2VAC6NH9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Honeymoon;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = Launch.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

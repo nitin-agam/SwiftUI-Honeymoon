@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUI_HoneymoonApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DestinationHomeView()
         }
     }
 }
