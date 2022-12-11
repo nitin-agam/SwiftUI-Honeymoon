@@ -11,7 +11,20 @@ struct DestinationHomeView: View {
     
     var body: some View {
         
-        DestinationCardView(destination: destinationArray[7])
+        VStack {
+            
+            HomeHeaderView()
+                .frame(height: 80)
+            
+            Spacer()
+            
+            DestinationCardView(destination: destinationArray[1])
+                .padding()
+            
+            Spacer()
+            
+            HomeFooterView()
+        }
     }
 }
 

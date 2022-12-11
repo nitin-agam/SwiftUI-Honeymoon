@@ -23,6 +23,7 @@ struct DestinationCardView: View {
                         .font(.largeTitle)
                         .fontWeight(.bold)
                         .padding(.vertical, 8)
+                        .shadow(radius: 5)
                         .overlay(alignment: .bottom) {
                             Rectangle()
                                 .fill(.white)
@@ -50,7 +51,7 @@ struct DestinationCardView: View {
 
 struct DestinationCardView_Previews: PreviewProvider {
     static var previews: some View {
-        DestinationCardView(destination: destinationArray[6])
+        DestinationCardView(destination: destinationArray[0])
             .previewLayout(.fixed(width: 375, height: 600))
     }
 }
