@@ -24,6 +24,9 @@
 		C757DAFB2946077E00DEA463 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C757DAFA2946077E00DEA463 /* InfoView.swift */; };
 		C757DAFD2946098500DEA463 /* SectionTitleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C757DAFC2946098500DEA463 /* SectionTitleModifier.swift */; };
 		C757DAFF294616AA00DEA463 /* ContinueButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C757DAFE294616AA00DEA463 /* ContinueButtonModifier.swift */; };
+		C757DB122949010100DEA463 /* DragSymbolModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C757DB112949010100DEA463 /* DragSymbolModifier.swift */; };
+		C757DB14294904EF00DEA463 /* CardTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C757DB13294904EF00DEA463 /* CardTransition.swift */; };
+		C757DB16294906D100DEA463 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = C757DB15294906D100DEA463 /* PlaySound.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +48,9 @@
 		C757DAFA2946077E00DEA463 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		C757DAFC2946098500DEA463 /* SectionTitleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTitleModifier.swift; sourceTree = "<group>"; };
 		C757DAFE294616AA00DEA463 /* ContinueButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinueButtonModifier.swift; sourceTree = "<group>"; };
+		C757DB112949010100DEA463 /* DragSymbolModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragSymbolModifier.swift; sourceTree = "<group>"; };
+		C757DB13294904EF00DEA463 /* CardTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTransition.swift; sourceTree = "<group>"; };
+		C757DB15294906D100DEA463 /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,8 +120,11 @@
 				C757DAF02945F2E500DEA463 /* HomeFooterView.swift */,
 				C757DAFC2946098500DEA463 /* SectionTitleModifier.swift */,
 				C757DAFE294616AA00DEA463 /* ContinueButtonModifier.swift */,
+				C757DB112949010100DEA463 /* DragSymbolModifier.swift */,
+				C757DB13294904EF00DEA463 /* CardTransition.swift */,
 				C757DAF92946076C00DEA463 /* Info */,
 				C757DAF82946076100DEA463 /* Guide */,
+				C757DB15294906D100DEA463 /* PlaySound.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -218,10 +227,13 @@
 				C757DAF32945F80F00DEA463 /* GuideView.swift in Sources */,
 				C757DAFD2946098500DEA463 /* SectionTitleModifier.swift in Sources */,
 				C757DAEB2945D20700DEA463 /* HoneymoonData.swift in Sources */,
+				C757DB122949010100DEA463 /* DragSymbolModifier.swift in Sources */,
 				C757DAF72945F86600DEA463 /* GuideInfo.swift in Sources */,
 				C757DAED2945D32D00DEA463 /* DestinationCardView.swift in Sources */,
+				C757DB16294906D100DEA463 /* PlaySound.swift in Sources */,
 				C757DAFB2946077E00DEA463 /* InfoView.swift in Sources */,
 				C757DAF52945F82E00DEA463 /* GuideComponentView.swift in Sources */,
+				C757DB14294904EF00DEA463 /* CardTransition.swift in Sources */,
 				C757DAFF294616AA00DEA463 /* ContinueButtonModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

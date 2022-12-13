@@ -10,23 +10,20 @@ import SwiftUI
 struct HomeFooterView: View {
     
     @Binding var showBookingAlert: Bool
+    let haptics = UINotificationFeedbackGenerator()
     
     var body: some View {
         HStack {
             
-            Button {
-                
-            } label: {
-                Image(systemName: "xmark.circle")
-                    .font(.system(size: 42, weight: .light))
-                
-            }
+            Image(systemName: "xmark.circle")
+                .font(.system(size: 42, weight: .light))
             .tint(.primary)
             
             Spacer()
 
-            
             Button {
+                playSound(sound: "sound-click", type: "mp3")
+                self.haptics.notificationOccurred(.success)
                 self.showBookingAlert.toggle()
             } label: {
                 Text("Book Destination".uppercased())
@@ -42,12 +39,8 @@ struct HomeFooterView: View {
             
             Spacer()
             
-            Button {
-                
-            } label: {
-                Image(systemName: "heart.circle")
-                    .font(.system(size: 42, weight: .light))
-            }
+            Image(systemName: "heart.circle")
+                .font(.system(size: 42, weight: .light))
             .tint(.primary)
         }
         .padding()
