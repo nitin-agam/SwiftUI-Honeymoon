@@ -17,7 +17,7 @@ A small demo application created in SwiftUI using Xcode 14 is shown here. In thi
   
   
 <br>
-In this app, I build the feature similar to Tinder's like and dislike animations. The app is showing some honeymoon destinations to users and allow them to swipe the card to like and dislike the destination.
+In this app, I build a feature similar to Tinder's like and dislike animations. The app shows some honeymoon destinations to users and allows them to swipe the card to like and dislike the destination.
 
 <br>
   
