@@ -44,6 +44,7 @@ struct InfoView: View {
                     Text("continue".uppercased())
                         .modifier(ContinueButtonModifier())
                 }
+                .frame(maxWidth: 300)
             }
             .frame(minWidth: 0, maxWidth: .infinity)
             .padding(.top, 15)
