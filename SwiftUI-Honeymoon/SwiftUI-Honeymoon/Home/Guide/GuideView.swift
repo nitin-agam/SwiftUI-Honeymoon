@@ -36,7 +36,7 @@ struct GuideView: View {
                 
                 Spacer(minLength: 10)
                 
-                VStack(alignment: .leading, spacing: 25) {
+                VStack(alignment: .leading, spacing: 30) {
                     ForEach(guideArray) { item in
                         GuideComponentView(guideInfo: item)
                     }

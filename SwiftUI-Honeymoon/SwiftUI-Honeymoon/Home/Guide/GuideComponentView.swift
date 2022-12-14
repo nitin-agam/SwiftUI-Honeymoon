@@ -14,9 +14,14 @@ struct GuideComponentView: View {
     var body: some View {
         HStack(alignment: .center, spacing: 2) {
             
-            Image(systemName: guideInfo.icon)
-                .font(.largeTitle)
-                .foregroundColor(.pink)
+            VStack {
+                Image(systemName: guideInfo.icon)
+                    .font(.largeTitle)
+                    .foregroundColor(.pink)
+                    .frame(width: 40, height: 40)
+                
+                Spacer()
+            }
             
             Spacer()
             
@@ -29,7 +34,7 @@ struct GuideComponentView: View {
                     Spacer()
                     
                     Text(guideInfo.subtitle.uppercased())
-                        .font(.footnote)
+                        .font(.title3)
                         .fontWeight(.bold)
                         .foregroundColor(.pink)
                 }
@@ -37,8 +42,7 @@ struct GuideComponentView: View {
                 Divider().padding(.bottom, 4)
                 
                 Text(guideInfo.description)
-                    .font(.footnote)
-                    .foregroundColor(.secondary)
+                    .font(.body)
                     .fixedSize(horizontal: false, vertical: true)
             }
         }
