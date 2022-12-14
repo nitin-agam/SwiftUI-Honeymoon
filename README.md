@@ -42,7 +42,7 @@ In this app, I build the feature similar to Tinder's like and dislike animations
 and many other things...
 
 <br>
-Note: Following the [swiftuimasterclass.com](https://swiftuimasterclass.com/) courses, I learned and created this demo app. You should check out this website for amazing content. 
+Note: Following the swiftuimasterclass.com courses, I learned and created this demo app. You should check out this website for amazing content. 
 
 <br>
 
